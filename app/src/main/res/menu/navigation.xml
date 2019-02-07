@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_chart"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/title_chart"/>
+
+    <item
+            android:id="@+id/navigation_transactions"
+            android:icon="@drawable/ic_menu_button"
+            android:title="@string/title_transactions"/>
+
+    <item
+            android:id="@+id/navigation_converter"
+            android:icon="@drawable/ic_exchange"
+            android:title="@string/title_converter"/>
+
+</menu>

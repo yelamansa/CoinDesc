@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/periodSpinner"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+    />
+    <TextView
+            android:text="Период"
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:id="@+id/periodTextView"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/periodSpinner"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/currencySpinner"/>
+    <TextView
+            android:text="Валюта"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyTextView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="12dp" app:layout_constraintTop_toTopOf="parent"/>
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/currencySpinner" app:layout_constraintStart_toEndOf="@+id/currencyTextView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lineChart" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="@+id/lineChart"
+            app:layout_constraintEnd_toEndOf="@+id/lineChart" android:visibility="gone"/>
+</android.support.constraint.ConstraintLayout>
