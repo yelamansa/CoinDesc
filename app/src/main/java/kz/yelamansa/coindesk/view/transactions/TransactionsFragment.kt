@@ -1,5 +1,6 @@
 package kz.yelamansa.coindesk.view.transactions
 
+import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.DividerItemDecoration
@@ -32,7 +33,7 @@ class TransactionsFragment:Fragment(), TransactionsVeiw {
 
     override fun updateTransactions(transactions: List<Transaction>) {
         transactionRecyclerView?.layoutManager = LinearLayoutManager(activity)
-        transactionRecyclerView?.adapter = TransactionAdapter(transactions)
+        transactionRecyclerView?.adapter = TransactionAdapter(activity as Context, transactions)
         transactionRecyclerView?.addItemDecoration(DividerItemDecoration(transactionRecyclerView.context, LinearLayoutManager.VERTICAL))
     }
 

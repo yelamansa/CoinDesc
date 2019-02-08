@@ -18,4 +18,5 @@
         <item>Месяц</item>
         <item>Год</item>
     </string-array>
+    <string name="title_activity_detail">DetailActivity</string>
 </resources>
