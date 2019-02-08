@@ -10,9 +10,9 @@ import kz.yelamansa.coindesk.R
 import java.text.SimpleDateFormat
 import java.util.*
 
-const val TRANSACTION_AMOUNT:String = "TRANSACTION_ID"
-const val TRANSACTION_DATE:String = "TRANSACTION_ID"
-const val TRANSACTION_TYPE:String = "TRANSACTION_ID"
+const val TRANSACTION_AMOUNT:String = "TRANSACTION_AMOUNT"
+const val TRANSACTION_DATE:String = "TRANSACTION_DATE"
+const val TRANSACTION_TYPE:String = "TRANSACTION_TYPE"
 
 class TransactionDetailActivity : AppCompatActivity() {
 
